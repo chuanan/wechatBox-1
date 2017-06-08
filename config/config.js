@@ -7,8 +7,8 @@ module.exports={
         user     : "wechatBox",
         password : "wechatbox",
         database : "wechatBox"
-    }
-
-
+    },
+    //每个微信号最多可以获取多少个注册码
+    MaxGetTheNumberOfInvitationCodes:2,
 
 }
