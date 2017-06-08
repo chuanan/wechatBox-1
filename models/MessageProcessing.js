@@ -1,10 +1,7 @@
 /**
  * Created by hiibook on 2017/6/8.
  */
-exports.wechatdo = MessageProcessing;
-
-
-    var MessageProcessing = function (req, res) {
+var MessageProcessing = function (req, res,next) {
     var _da;
     req.on("data",function(data){
         /*微信服务器传过来的是xml格式的，是buffer类型，因为js本身只有字符串数据类型，所以需要通过toString把xml转换为字符串*/
@@ -35,3 +32,4 @@ function getXMLNodeValue(node_name,xml){
     var _tmp = tmp[1].split("</"+node_name+">");
     return _tmp[0];
 }
+module.exports = MessageProcessing;

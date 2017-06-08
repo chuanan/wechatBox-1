@@ -1,17 +1,12 @@
 var express = require('express');
 var router = express.Router();
+var wechatVerification = require('../models/wechatVerification.js');
+var MessageProcessing = require('../models/MessageProcessing.js');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.send(req.query.echostr);
-});
+router.get('/',wechatVerification);
 
-router.post('/', function(req, res, next) {
-    res.send(req.body.echostr);
-});
-router.post('/test', function(req, res, next) {
-    console.log(req.body,"有新消息")
-    res.send(req.body.echostr);
-});
+router.post('/', MessageProcessing);
+
 
 module.exports = router;

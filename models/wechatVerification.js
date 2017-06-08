@@ -1,11 +1,7 @@
 /**
  * Created by hiibook on 2017/6/8.
  */
-module.exports =wechatVerification;
-
-
-     var wechatVerification = function (req, res) {
-
+    var wechatVerification = function (req, res,next) {
     var echostr, nonce, signature, timestamp;
     signature = req.query.signature;
     timestamp = req.query.timestamp;
@@ -24,3 +20,4 @@ function check(timestamp, nonce, signature ,token) {
     currSign = crypto.createHash("sha1").update(tmp).digest("hex");
     return currSign === signature;
 };
+module.exports = wechatVerification;
