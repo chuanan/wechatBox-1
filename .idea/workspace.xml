@@ -4,8 +4,7 @@
     <list default="true" id="4f37ddf2-223c-45d4-84a2-f19c265c7246" name="默认" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/MessageProcessing.js" afterPath="$PROJECT_DIR$/models/MessageProcessing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/wechatVerification.js" afterPath="$PROJECT_DIR$/models/wechatVerification.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/wechat.js" afterPath="$PROJECT_DIR$/routes/wechat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wechatVerification.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wechatVerification.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/wechatVerification.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
+            <state relative-caret-position="558">
               <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
@@ -83,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageProcessing.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MessageProcessing.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/MessageProcessing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <state relative-caret-position="334">
+              <caret line="37" column="223" selection-start-line="37" selection-start-column="223" selection-end-line="37" selection-end-column="223" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -166,8 +165,8 @@
         <option value="$PROJECT_DIR$/models/userBind.js" />
         <option value="$PROJECT_DIR$/models/mysqlPool.js" />
         <option value="$PROJECT_DIR$/routes/wechat.js" />
-        <option value="$PROJECT_DIR$/models/MessageProcessing.js" />
         <option value="$PROJECT_DIR$/models/wechatVerification.js" />
+        <option value="$PROJECT_DIR$/models/MessageProcessing.js" />
       </list>
     </option>
   </component>
@@ -179,8 +178,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-12" />
-    <option name="y" value="187" />
+    <option name="x" value="-163" />
+    <option name="y" value="96" />
     <option name="width" value="1932" />
     <option name="height" value="966" />
   </component>
@@ -360,15 +359,15 @@
       <option name="presentableId" value="Default" />
       <updated>1496841338400</updated>
       <workItem from="1496841341199" duration="551000" />
-      <workItem from="1496884449537" duration="6592000" />
+      <workItem from="1496884449537" duration="9377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7143000" />
+    <option name="totallyTimeSpent" value="9928000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-12" y="187" width="1932" height="966" extended-state="1" />
+    <frame x="-163" y="96" width="1932" height="966" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973601" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -531,20 +530,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/MessageProcessing.js">
+    <entry file="file://$PROJECT_DIR$/models/wechatVerification.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        <state relative-caret-position="558">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/wechatVerification.js">
+    <entry file="file://$PROJECT_DIR$/models/MessageProcessing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="334">
+          <caret line="37" column="223" selection-start-line="37" selection-start-column="223" selection-end-line="37" selection-end-column="223" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>

@@ -13,6 +13,7 @@
     "express": "~4.14.1",
     "morgan": "~1.7.0",
     "mysql": "^2.13.0",
-    "serve-favicon": "~2.3.2"
+    "serve-favicon": "~2.3.2",
+    "xmldom": "^0.1.27"
   }
 }
