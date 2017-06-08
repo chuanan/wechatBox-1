@@ -1,6 +1,9 @@
 /**
  * Created by hiibook on 2017/6/8.
  */
+var invitationCodeManage = require("./invitationCodeManage");
+
+
 var MessageProcessing = function (req, res, next) {
     var _da;
     req.on("data", function (data) {
@@ -16,13 +19,16 @@ var MessageProcessing = function (req, res, next) {
         var MsgType = getXMLNodeValue('MsgType', _da);
         var Content = getXMLNodeValue('Content', _da);
         var MsgId = getXMLNodeValue('MsgId', _da);
-        console.log(ToUserName);
-        console.log(FromUserName);
-        console.log(CreateTime);
-        console.log(MsgType);
-        console.log(Content);
-        console.log(MsgId);
+        //完成回掉函数
+        function complete(message) {
+            var xml = '<xml><ToUserName>' + FromUserName + '</ToUserName><FromUserName>' + ToUserName + '</FromUserName><CreateTime>' + CreateTime + '</CreateTime><MsgType>' + MsgType + '</MsgType><Content>' + message + '</Content></xml>';
+            res.send(xml);
+        }
+
             switch (Content) {
+                case  "<![CDATA[邀请码]]>"||"<![CDATA[注册码]]>":
+                    invitationCodeManage.getInvitationCode(complete);
+                    break;
                 case  "<![CDATA[帮助]]>":
                     var help = "正在开发帮助模块，请等待开发完成";
                     var xml = '<xml><ToUserName>' + FromUserName + '</ToUserName><FromUserName>' + ToUserName + '</FromUserName><CreateTime>' + CreateTime + '</CreateTime><MsgType>' + MsgType + '</MsgType><Content>' + help + '</Content></xml>';
